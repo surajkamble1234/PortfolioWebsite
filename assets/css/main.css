@@ -1,12 +1,3 @@
-/* =========================================================
-   SURAJ KAMBLE PORTFOLIO
-   Modern Professional Portfolio Design
-========================================================= */
-
-/* =========================================================
-   ROOT VARIABLES
-========================================================= */
-
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
   --heading-font: "Poppins", sans-serif;
@@ -26,25 +17,17 @@
   --border-color: #e2e8f0;
   --muted-color: #64748b;
 
-  --contrast-color: #ffffff;
-
   --shadow-sm: 0 4px 20px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 12px 35px rgba(15, 23, 42, 0.09);
   --shadow-lg: 0 20px 50px rgba(15, 23, 42, 0.13);
-
-  scroll-behavior: smooth;
-}
-
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-* {
-  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -85,112 +68,116 @@ img {
   color: #ffffff;
 }
 
+
 /* =========================================================
-   HEADER / SIDEBAR
+   SIDEBAR
 ========================================================= */
 
 .header {
-  color: #cbd5e1;
-
-  background:
-    radial-gradient(
-      circle at 20% 10%,
-      rgba(37, 99, 235, 0.15),
-      transparent 30%
-    ),
-    linear-gradient(
-      180deg,
-      #07111f 0%,
-      #0b1628 100%
-    );
-
   position: fixed;
-
   top: 0;
   left: 0;
   bottom: 0;
 
-  width: 290px;
+  width: 305px;
 
-  padding: 28px 20px;
+  padding: 28px 22px;
 
   overflow-y: auto;
 
   z-index: 997;
+
+  color: #cbd5e1;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(37, 99, 235, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #07111f 0%,
+      #050d18 100%
+    );
 
   border-right: 1px solid rgba(255, 255, 255, 0.07);
 
   box-shadow: 10px 0 40px rgba(2, 8, 23, 0.08);
 }
 
+
 /* =========================================================
-   PROFILE IMAGE
+   SIDEBAR PROFILE IMAGE
 ========================================================= */
 
 .header .profile-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 150px;
+  height: 150px;
 
-  margin: 8px 0 22px;
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .profile-img img {
-  width: 145px;
-  height: 145px;
+  width: 140px !important;
+  height: 140px !important;
 
   display: block;
 
   object-fit: cover;
-  object-position: center center;
+  object-position: center 55%;
 
   border-radius: 50% !important;
 
   border: 5px solid #ffffff;
 
-  padding: 3px;
+  padding: 4px;
 
   background: #ffffff;
 
   box-shadow:
-    0 0 0 7px rgba(96, 165, 250, 0.10),
-    0 12px 30px rgba(0, 0, 0, 0.25);
+    0 0 0 8px rgba(96, 165, 250, 0.10),
+    0 15px 35px rgba(0, 0, 0, 0.30);
 
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.35s ease;
 }
 
 .header .profile-img img:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 
   box-shadow:
-    0 0 0 8px rgba(96, 165, 250, 0.16),
-    0 16px 35px rgba(0, 0, 0, 0.30);
+    0 0 0 9px rgba(96, 165, 250, 0.18),
+    0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
+
 /* =========================================================
-   NAME
+   SIDEBAR NAME
 ========================================================= */
 
 .header .logo {
+  display: flex;
   justify-content: center;
+  align-items: center;
+
   margin-bottom: 18px;
 }
 
 .header .logo h1 {
-  color: #ffffff;
-
-  font-size: 23px;
-
-  font-weight: 700;
-
-  letter-spacing: -0.3px;
-
   margin: 0;
 
-  text-align: center;
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
 }
+
 
 /* =========================================================
    SOCIAL LINKS
@@ -198,24 +185,21 @@ img {
 
 .header .social-links {
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 
   flex-wrap: wrap;
 
-  gap: 8px;
+  gap: 9px;
 
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .header .social-links a {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
 
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
 
@@ -223,9 +207,9 @@ img {
 
   background: rgba(255, 255, 255, 0.06);
 
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
-  border-radius: 10px;
+  border-radius: 50%;
 
   font-size: 16px;
 }
@@ -240,6 +224,7 @@ img {
   transform: translateY(-3px);
 }
 
+
 /* =========================================================
    NAVIGATION
 ========================================================= */
@@ -251,9 +236,8 @@ img {
 .navmenu ul {
   list-style: none;
 
-  padding: 0;
-
   margin: 0;
+  padding: 0;
 }
 
 .navmenu li {
@@ -263,12 +247,11 @@ img {
 .navmenu a,
 .navmenu a:focus {
   display: flex;
-
   align-items: center;
 
   width: 100%;
 
-  padding: 12px 14px;
+  padding: 12px 13px;
 
   color: #94a3b8;
 
@@ -282,13 +265,13 @@ img {
 }
 
 .navmenu a .navicon {
-  width: 25px;
+  width: 26px;
 
   margin-right: 10px;
 
-  font-size: 18px;
-
   color: #64748b;
+
+  font-size: 18px;
 
   transition: all 0.3s ease;
 }
@@ -306,16 +289,18 @@ img {
   color: #60a5fa;
 }
 
+
 /* =========================================================
-   DESKTOP MAIN
+   MAIN CONTENT
 ========================================================= */
 
 @media (min-width: 1200px) {
   .header ~ main,
   .header ~ #footer {
-    margin-left: 290px;
+    margin-left: 305px;
   }
 }
+
 
 /* =========================================================
    MOBILE HEADER
@@ -325,8 +310,6 @@ img {
   .header {
     left: -100%;
     width: 290px;
-
-    transition: left 0.35s ease;
   }
 
   .header.header-show {
@@ -335,40 +318,35 @@ img {
 }
 
 .header .header-toggle {
-  color: #ffffff;
-
-  background: var(--accent-color);
-
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 12px;
-
   position: fixed;
 
   top: 16px;
   right: 16px;
 
-  font-size: 22px;
+  width: 44px;
+  height: 44px;
 
-  box-shadow:
-    0 8px 25px rgba(37, 99, 235, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: var(--accent-color);
+
+  border-radius: 12px;
+
+  font-size: 22px;
 
   cursor: pointer;
 
-  z-index: 9999;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
 }
 
 .header .header-toggle:hover {
   background: var(--accent-dark);
-
-  transform: scale(1.04);
 }
+
 
 /* =========================================================
    SECTIONS
@@ -387,6 +365,7 @@ section.light-background {
   background: var(--light-bg);
 }
 
+
 /* =========================================================
    SECTION TITLES
 ========================================================= */
@@ -400,13 +379,11 @@ section.light-background {
 
   display: inline-block;
 
-  font-size: 32px;
-
-  line-height: 1.2;
-
   margin-bottom: 18px;
-
   padding-bottom: 14px;
+
+  font-size: 32px;
+  line-height: 1.2;
 }
 
 .section-title h2::after {
@@ -415,11 +392,9 @@ section.light-background {
   position: absolute;
 
   left: 0;
-
   bottom: 0;
 
-  width: 52px;
-
+  width: 55px;
   height: 4px;
 
   border-radius: 10px;
@@ -428,24 +403,24 @@ section.light-background {
 }
 
 .section-title p {
-  max-width: 760px;
+  max-width: 800px;
 
   margin: 0;
 
   color: var(--muted-color);
 }
 
+
 /* =========================================================
    HERO
 ========================================================= */
 
 .hero {
-  min-height: 100vh;
-
   position: relative;
 
-  display: flex;
+  min-height: 100vh;
 
+  display: flex;
   align-items: center;
 
   padding: 100px 0;
@@ -464,8 +439,6 @@ section.light-background {
   height: 100%;
 
   object-fit: cover;
-
-  object-position: center;
 
   z-index: 1;
 
@@ -521,18 +494,19 @@ section.light-background {
 .hero-intro {
   display: block;
 
+  margin-bottom: 8px;
+
   color: #93c5fd;
 
   font-size: 18px;
-
   font-weight: 600;
-
-  margin-bottom: 8px;
 
   letter-spacing: 0.5px;
 }
 
 .hero h2 {
+  margin-bottom: 15px;
+
   color: #ffffff;
 
   font-size: clamp(42px, 6vw, 70px);
@@ -542,16 +516,14 @@ section.light-background {
   line-height: 1.08;
 
   letter-spacing: -2px;
-
-  margin-bottom: 15px;
 }
 
 .hero p {
+  margin: 10px 0;
+
   color: #dbeafe;
 
   font-size: 25px;
-
-  margin: 10px 0;
 }
 
 .hero p span {
@@ -570,20 +542,15 @@ section.light-background {
   font-size: 17px;
 
   line-height: 1.8;
-
-  border: none;
-
-  padding: 0;
 }
 
 .hero-buttons {
   display: flex;
-
   align-items: center;
 
-  flex-wrap: wrap;
-
   gap: 10px;
+
+  margin-top: 25px;
 }
 
 .hero .btn {
@@ -601,8 +568,7 @@ section.light-background {
 
   border-color: var(--accent-color);
 
-  box-shadow:
-    0 8px 25px rgba(37, 99, 235, 0.28);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.28);
 }
 
 .hero .btn-primary:hover {
@@ -621,6 +587,7 @@ section.light-background {
   transform: translateY(-3px);
 }
 
+
 /* =========================================================
    ABOUT
 ========================================================= */
@@ -629,35 +596,42 @@ section.light-background {
   align-items: center;
 }
 
+.about-image-column {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
 .about .about-profile-img {
-  width: 100%;
+  width: 300px !important;
+  max-width: 300px !important;
 
-  max-width: 360px;
-
-  height: 400px;
-
-  object-fit: cover;
-
-  object-position: center top;
+  height: 380px !important;
 
   display: block;
 
   margin: 0 auto;
 
-  border-radius: 20px !important;
+  object-fit: cover;
+
+  object-position: center top;
+
+  border-radius: 18px !important;
 
   border: 1px solid var(--border-color);
 
+  background: #ffffff;
+
   box-shadow: var(--shadow-lg);
 
-  transition: all 0.4s ease;
+  transition: all 0.35s ease;
 }
 
 .about .about-profile-img:hover {
-  transform: translateY(-7px);
+  transform: translateY(-6px);
 
-  box-shadow:
-    0 25px 55px rgba(15, 23, 42, 0.16);
+  box-shadow: 0 25px 55px rgba(15, 23, 42, 0.16);
 }
 
 .about .content {
@@ -665,9 +639,9 @@ section.light-background {
 }
 
 .about .content h2 {
-  font-size: 28px;
+  margin-bottom: 18px;
 
-  margin-bottom: 15px;
+  font-size: 28px;
 }
 
 .about .content p {
@@ -677,14 +651,12 @@ section.light-background {
 .about .content ul {
   list-style: none;
 
-  padding: 0;
-
   margin: 20px 0;
+  padding: 0;
 }
 
 .about .content ul li {
   display: flex;
-
   align-items: flex-start;
 
   margin-bottom: 14px;
@@ -693,18 +665,18 @@ section.light-background {
 }
 
 .about .content ul i {
-  color: var(--accent-color);
-
   margin-right: 8px;
-
   margin-top: 5px;
+
+  color: var(--accent-color);
 }
 
 .about .content ul strong {
-  color: var(--heading-color);
-
   margin-right: 7px;
+
+  color: var(--heading-color);
 }
+
 
 /* =========================================================
    STATS
@@ -743,33 +715,32 @@ section.light-background {
   height: 52px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
-  border-radius: 14px;
-
-  background: #eff6ff;
+  margin-bottom: 14px;
 
   color: var(--accent-color);
 
-  font-size: 24px;
+  background: #eff6ff;
 
-  margin-bottom: 14px;
+  border-radius: 14px;
+
+  font-size: 24px;
 }
 
 .stats .stats-item .purecounter {
   display: block;
+
+  margin: 5px 0 10px;
+
+  color: var(--heading-color);
 
   font-size: 38px;
 
   line-height: 1;
 
   font-weight: 800;
-
-  color: var(--heading-color);
-
-  margin: 5px 0 10px;
 }
 
 .stats .stats-item p {
@@ -783,25 +754,30 @@ section.light-background {
 .stats .stats-item p strong {
   display: block;
 
+  margin-bottom: 3px;
+
   color: var(--heading-color);
 
   font-size: 16px;
-
-  margin-bottom: 3px;
 }
 
 .stats .stats-item p span {
   font-size: 13px;
 }
 
+
 /* =========================================================
    SKILLS
 ========================================================= */
 
 .skill-box {
+  position: relative;
+
   height: 100%;
 
   padding: 30px 26px;
+
+  overflow: hidden;
 
   background: #ffffff;
 
@@ -812,10 +788,6 @@ section.light-background {
   box-shadow: var(--shadow-sm);
 
   transition: all 0.35s ease;
-
-  position: relative;
-
-  overflow: hidden;
 }
 
 .skill-box::before {
@@ -829,35 +801,33 @@ section.light-background {
   width: 100%;
   height: 3px;
 
-  background:
-    linear-gradient(
-      90deg,
-      var(--accent-color),
-      #60a5fa
-    );
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    #60a5fa
+  );
 }
 
 .skill-box:hover {
   transform: translateY(-8px);
 
-  box-shadow: var(--shadow-md);
-
   border-color: rgba(37, 99, 235, 0.2);
+
+  box-shadow: var(--shadow-md);
 }
 
 .skill-box h4 {
-  font-size: 19px;
-
   margin-bottom: 20px;
 
   color: var(--heading-color);
+
+  font-size: 19px;
 }
 
 .skill-box p {
   display: inline-block;
 
   margin: 5px 5px 5px 0;
-
   padding: 7px 12px;
 
   color: #334155;
@@ -869,7 +839,6 @@ section.light-background {
   border-radius: 8px;
 
   font-size: 13px;
-
   font-weight: 500;
 
   transition: all 0.25s ease;
@@ -883,26 +852,26 @@ section.light-background {
   border-color: #bfdbfe;
 }
 
+
 /* =========================================================
    RESUME
 ========================================================= */
 
 .resume .resume-title {
+  margin-top: 10px;
+  margin-bottom: 28px;
+
   color: var(--heading-color);
 
   font-size: 23px;
-
-  margin-top: 10px;
-
-  margin-bottom: 28px;
 }
 
 .resume .resume-item {
   position: relative;
 
-  padding: 0 0 28px 28px;
-
   margin-top: -2px;
+
+  padding: 0 0 28px 28px;
 
   border-left: 2px solid #dbeafe;
 }
@@ -912,37 +881,32 @@ section.light-background {
 
   position: absolute;
 
+  top: 0;
+  left: -7.5px;
+
   width: 13px;
   height: 13px;
-
-  left: -7.5px;
-  top: 0;
-
-  border-radius: 50%;
 
   background: #ffffff;
 
   border: 3px solid var(--accent-color);
+
+  border-radius: 50%;
 }
 
 .resume .resume-item h4 {
+  margin-bottom: 7px;
+
   color: var(--heading-color);
 
   font-size: 18px;
-
-  line-height: 1.4;
-
-  margin-bottom: 7px;
-
-  text-transform: none;
 }
 
 .resume .resume-item h5 {
   display: inline-block;
 
-  padding: 5px 11px;
-
   margin-bottom: 10px;
+  padding: 5px 11px;
 
   color: var(--accent-color);
 
@@ -951,14 +915,13 @@ section.light-background {
   border-radius: 6px;
 
   font-size: 13px;
-
   font-weight: 600;
 }
 
 .resume .resume-item p {
-  color: var(--muted-color);
-
   margin-bottom: 10px;
+
+  color: var(--muted-color);
 }
 
 .resume .resume-item p strong {
@@ -979,31 +942,35 @@ section.light-background {
   padding-bottom: 7px;
 }
 
-/* Resume Button */
+.resume-download {
+  margin-top: 18px;
 
-.resume .btn-primary {
+  padding: 11px 22px;
+
+  color: #ffffff;
+
   background: var(--accent-color);
 
   border: none;
 
   border-radius: 10px;
 
-  padding: 11px 22px;
-
   font-weight: 600;
 
-  box-shadow:
-    0 7px 20px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 7px 20px rgba(37, 99, 235, 0.2);
 }
 
-.resume .btn-primary:hover {
+.resume-download:hover {
+  color: #ffffff;
+
   background: var(--accent-dark);
 
   transform: translateY(-2px);
 }
 
+
 /* =========================================================
-   PROJECTS / PORTFOLIO
+   PROJECTS
 ========================================================= */
 
 .portfolio .portfolio-content {
@@ -1013,6 +980,8 @@ section.light-background {
 
   padding: 30px !important;
 
+  overflow: hidden;
+
   background: #ffffff !important;
 
   border: 1px solid var(--border-color);
@@ -1020,8 +989,6 @@ section.light-background {
   border-radius: 16px !important;
 
   box-shadow: var(--shadow-sm) !important;
-
-  overflow: hidden;
 
   transition: all 0.35s ease;
 }
@@ -1037,20 +1004,19 @@ section.light-background {
   width: 100%;
   height: 4px;
 
-  background:
-    linear-gradient(
-      90deg,
-      var(--accent-color),
-      #60a5fa
-    );
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    #60a5fa
+  );
 }
 
 .portfolio .portfolio-content:hover {
   transform: translateY(-8px);
 
-  box-shadow: var(--shadow-md) !important;
-
   border-color: rgba(37, 99, 235, 0.22);
+
+  box-shadow: var(--shadow-md) !important;
 }
 
 .project-icon {
@@ -1058,7 +1024,6 @@ section.light-background {
   height: 48px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -1074,11 +1039,11 @@ section.light-background {
 }
 
 .portfolio .portfolio-content h4 {
+  margin-bottom: 12px;
+
   color: var(--heading-color);
 
   font-size: 20px;
-
-  margin-bottom: 12px;
 }
 
 .portfolio .portfolio-content p {
@@ -1088,13 +1053,13 @@ section.light-background {
 }
 
 .portfolio .portfolio-content ul {
+  margin-bottom: 22px;
+
   padding-left: 20px;
 
   color: var(--muted-color);
 
   font-size: 14px;
-
-  margin-bottom: 22px;
 }
 
 .portfolio .portfolio-content li {
@@ -1105,8 +1070,6 @@ section.light-background {
   color: var(--heading-color);
 }
 
-/* Project Buttons */
-
 .project-buttons {
   display: flex;
 
@@ -1116,9 +1079,9 @@ section.light-background {
 }
 
 .portfolio .portfolio-content .btn {
-  border-radius: 8px;
-
   padding: 8px 17px;
+
+  border-radius: 8px;
 
   font-size: 13px;
 
@@ -1145,6 +1108,7 @@ section.light-background {
   transform: translateY(-2px);
 }
 
+
 /* =========================================================
    CONTACT
 ========================================================= */
@@ -1164,6 +1128,9 @@ section.light-background {
 }
 
 .contact .info-item {
+  display: flex;
+  align-items: flex-start;
+
   margin-bottom: 28px;
 }
 
@@ -1174,9 +1141,10 @@ section.light-background {
   height: 46px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
+
+  margin-right: 15px;
 
   color: var(--accent-color);
 
@@ -1185,8 +1153,6 @@ section.light-background {
   border-radius: 12px;
 
   font-size: 20px;
-
-  margin-right: 15px;
 
   transition: all 0.3s ease;
 }
@@ -1234,6 +1200,7 @@ section.light-background {
 
   line-height: 1.6;
 }
+
 
 /* =========================================================
    CONTACT FORM
@@ -1284,8 +1251,7 @@ section.light-background {
 .contact-form .form-control:focus {
   border-color: var(--accent-color);
 
-  box-shadow:
-    0 0 0 4px rgba(37, 99, 235, 0.08);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
 }
 
 .contact-form textarea {
@@ -1309,8 +1275,7 @@ section.light-background {
 
   transition: all 0.3s ease;
 
-  box-shadow:
-    0 7px 20px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 7px 20px rgba(37, 99, 235, 0.2);
 }
 
 .contact-form button[type="submit"]:hover {
@@ -1318,6 +1283,7 @@ section.light-background {
 
   transform: translateY(-2px);
 }
+
 
 /* =========================================================
    FOOTER
@@ -1343,8 +1309,6 @@ section.light-background {
   color: #94a3b8;
 
   font-size: 13px;
-
-  text-align: center;
 }
 
 .footer .credits a {
@@ -1356,6 +1320,7 @@ section.light-background {
 .footer .credits a:hover {
   color: #93c5fd;
 }
+
 
 /* =========================================================
    SCROLL TOP
@@ -1371,7 +1336,6 @@ section.light-background {
   height: 45px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -1381,11 +1345,9 @@ section.light-background {
 
   border-radius: 12px;
 
-  box-shadow:
-    0 8px 25px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
 
   opacity: 0;
-
   visibility: hidden;
 
   z-index: 99999;
@@ -1397,8 +1359,6 @@ section.light-background {
   opacity: 1;
 
   visibility: visible;
-
-  bottom: 20px;
 }
 
 .scroll-top:hover {
@@ -1412,6 +1372,7 @@ section.light-background {
 .scroll-top i {
   font-size: 24px;
 }
+
 
 /* =========================================================
    PRELOADER
@@ -1435,7 +1396,6 @@ section.light-background {
   position: absolute;
 
   top: calc(50% - 25px);
-
   left: calc(50% - 25px);
 
   width: 50px;
@@ -1456,37 +1416,6 @@ section.light-background {
   }
 }
 
-/* =========================================================
-   AOS
-========================================================= */
-
-[data-aos] {
-  transition-duration: 700ms;
-}
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-
-.btn {
-  transition: all 0.3s ease;
-}
-
-/* =========================================================
-   UTILITY
-========================================================= */
-
-.rounded {
-  border-radius: 12px !important;
-}
-
-.shadow-sm {
-  box-shadow: var(--shadow-sm) !important;
-}
-
-.bg-white {
-  background-color: #ffffff !important;
-}
 
 /* =========================================================
    ACCESSIBILITY
@@ -1500,6 +1429,7 @@ textarea:focus-visible {
 
   outline-offset: 2px;
 }
+
 
 /* =========================================================
    RESPONSIVE - TABLET
@@ -1525,11 +1455,15 @@ textarea:focus-visible {
   }
 
   .about .about-profile-img {
-    height: 360px;
+    width: 280px !important;
+    max-width: 280px !important;
 
-    margin-bottom: 30px;
+    height: 350px !important;
+
+    margin-bottom: 25px;
   }
 }
+
 
 /* =========================================================
    RESPONSIVE - MOBILE
@@ -1581,12 +1515,16 @@ textarea:focus-visible {
 
   .hero-buttons .btn {
     width: 100%;
+  }
 
-    margin: 0 !important;
+  .about .about-profile-img {
+    width: 260px !important;
+    max-width: 260px !important;
 
-    text-align: center;
+    height: 330px !important;
   }
 }
+
 
 /* =========================================================
    RESPONSIVE - SMALL MOBILE
@@ -1595,9 +1533,8 @@ textarea:focus-visible {
 @media (max-width: 575px) {
 
   .hero {
-    padding-left: 20px;
-
     padding-right: 20px;
+    padding-left: 20px;
   }
 
   .hero h2 {
@@ -1614,29 +1551,34 @@ textarea:focus-visible {
     font-size: 15px;
   }
 
-  .about .about-profile-img {
-    height: 330px;
-  }
-
   .header {
     width: 280px;
   }
 
   .header .profile-img {
-    margin-top: 8px;
-
-    margin-bottom: 20px;
+    width: 130px;
+    height: 130px;
   }
 
   .header .profile-img img {
-    width: 125px;
+    width: 120px !important;
+    height: 120px !important;
+  }
 
-    height: 125px;
+  .about .about-profile-img {
+    width: 240px !important;
+    max-width: 240px !important;
+
+    height: 310px !important;
   }
 
   .project-buttons {
     flex-direction: column;
 
     align-items: flex-start;
+  }
+
+  .project-buttons .btn {
+    width: auto;
   }
 }

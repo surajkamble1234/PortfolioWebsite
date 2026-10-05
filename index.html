@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Suraj Kamble | Software Developer | Java Full Stack Developer</title>
 
   <meta
-    content="Suraj Kamble - Computer Engineering graduate and Software Developer skilled in Java, React.js, Node.js, Express.js and MySQL."
-    name="description">
+    name="description"
+    content="Suraj Kamble - Computer Engineering graduate and Software Developer skilled in Java, React.js, Node.js, Express.js and MySQL.">
 
   <meta
-    content="Suraj Kamble, Software Developer, Java Full Stack Developer, React.js, Node.js, Express.js, MySQL"
-    name="keywords">
+    name="keywords"
+    content="Suraj Kamble, Software Developer, Java Full Stack Developer, React.js, Node.js, Express.js, MySQL">
 
   <!-- Favicons -->
   <link href="assets/img/log.png" rel="icon">
@@ -27,12 +27,12 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS -->
@@ -48,34 +48,32 @@
 
 <body class="index-page">
 
-  <!-- =======================================================
-       HEADER
-  ======================================================== -->
+  <!-- =========================
+       HEADER / SIDEBAR
+  ========================== -->
 
   <header id="header" class="header dark-background d-flex flex-column">
 
-    <!-- Mobile Menu Button -->
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <!-- Profile Image -->
+    <!-- Profile -->
     <div class="profile-img">
       <img
         src="assets/img/my-profile-img.png"
         alt="Suraj Kamble - Software Developer"
-        class="img-fluid rounded-circle">
+        class="img-fluid">
     </div>
 
     <!-- Name -->
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+    <a href="index.html" class="logo">
       <h1 class="sitename">Suraj Kamble</h1>
     </a>
 
     <!-- Social Links -->
-    <div class="social-links text-center">
+    <div class="social-links">
 
       <a
         href="https://x.com/SurajBalajiKam2"
-        class="twitter"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="X">
@@ -84,7 +82,6 @@
 
       <a
         href="https://www.facebook.com/suraj.kamble.251349"
-        class="facebook"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Facebook">
@@ -93,7 +90,6 @@
 
       <a
         href="https://www.instagram.com/_suraj_b_kamble_/"
-        class="instagram"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram">
@@ -102,7 +98,6 @@
 
       <a
         href="https://github.com/surajkamble1234"
-        class="github"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub">
@@ -111,7 +106,6 @@
 
       <a
         href="https://www.linkedin.com/in/suraj-kamble-420600244"
-        class="linkedin"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn">
@@ -180,24 +174,25 @@
 
   </header>
 
-  <!-- =======================================================
+
+  <!-- =========================
        MAIN
-  ======================================================== -->
+  ========================== -->
 
   <main class="main">
 
-    <!-- =======================================================
+    <!-- =========================
          HERO
-    ======================================================== -->
+    ========================== -->
 
     <section id="hero" class="hero section dark-background">
 
       <img
         src="assets/img/hero-bg.png"
-        alt="Suraj Kamble portfolio background"
+        alt="Portfolio background"
         data-aos="fade-in">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up">
 
         <span class="hero-intro">Hello, I'm</span>
 
@@ -210,7 +205,6 @@
             data-typed-items="Software Developer,Java Full Stack Developer,Web Developer">
             Software Developer
           </span>
-
           <span
             class="typed-cursor typed-cursor--blink"
             aria-hidden="true">
@@ -222,7 +216,7 @@
           React.js, Node.js, Express.js and MySQL.
         </p>
 
-        <div class="hero-buttons mt-4">
+        <div class="hero-buttons">
 
           <a href="#projects" class="btn btn-primary">
             <i class="bi bi-code-slash"></i>
@@ -234,8 +228,10 @@
             class="btn btn-outline-light"
             target="_blank"
             rel="noopener noreferrer">
+
             <i class="bi bi-download"></i>
             Download Resume
+
           </a>
 
         </div>
@@ -244,9 +240,10 @@
 
     </section>
 
-    <!-- =======================================================
+
+    <!-- =========================
          ABOUT
-    ======================================================== -->
+    ========================== -->
 
     <section id="about" class="about section">
 
@@ -263,11 +260,11 @@
 
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4 justify-content-center">
+        <div class="row gy-4 align-items-center">
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 about-image-column">
 
             <img
               src="assets/img/sp.jpeg"
@@ -282,7 +279,7 @@
               Software Developer | Java Full Stack Developer
             </h2>
 
-            <p class="py-3">
+            <p>
               During my internships and training, I worked on web
               applications, user interfaces, REST APIs, CRUD functionality
               and database operations. I enjoy building practical
@@ -290,9 +287,9 @@
               problem-solving skills.
             </p>
 
-            <div class="row">
+            <div class="row about-details">
 
-              <div class="col-lg-6">
+              <div class="col-md-6">
 
                 <ul>
 
@@ -318,7 +315,7 @@
 
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-md-6">
 
                 <ul>
 
@@ -346,7 +343,7 @@
 
             </div>
 
-            <p class="py-3">
+            <p>
               I am currently looking for an entry-level or junior Software
               Developer / Java Full Stack Developer opportunity where I can
               contribute to real projects, strengthen my technical skills
@@ -361,13 +358,14 @@
 
     </section>
 
-    <!-- =======================================================
+
+    <!-- =========================
          STATS
-    ======================================================== -->
+    ========================== -->
 
     <section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
 
@@ -393,6 +391,7 @@
 
           </div>
 
+
           <div class="col-lg-3 col-md-6">
 
             <div class="stats-item">
@@ -415,6 +414,7 @@
 
           </div>
 
+
           <div class="col-lg-3 col-md-6">
 
             <div class="stats-item">
@@ -436,6 +436,7 @@
             </div>
 
           </div>
+
 
           <div class="col-lg-3 col-md-6">
 
@@ -465,9 +466,10 @@
 
     </section>
 
-    <!-- =======================================================
+
+    <!-- =========================
          SKILLS
-    ======================================================== -->
+    ========================== -->
 
     <section id="skills" class="skills section light-background">
 
@@ -482,7 +484,7 @@
 
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
 
@@ -500,6 +502,7 @@
 
           </div>
 
+
           <div class="col-lg-3 col-md-6">
 
             <div class="skill-box">
@@ -515,6 +518,7 @@
 
           </div>
 
+
           <div class="col-lg-3 col-md-6">
 
             <div class="skill-box">
@@ -524,11 +528,12 @@
               <p>Node.js</p>
               <p>Express.js</p>
               <p>REST APIs</p>
-              <p>CRUD Operations</p>
+              <p>CRUD</p>
 
             </div>
 
           </div>
+
 
           <div class="col-lg-3 col-md-6">
 
@@ -539,7 +544,7 @@
               <p>MySQL</p>
               <p>Git & GitHub</p>
               <p>Postman</p>
-              <p>VS Code / Eclipse</p>
+              <p>VS Code</p>
 
             </div>
 
@@ -551,9 +556,10 @@
 
     </section>
 
-    <!-- =======================================================
+
+    <!-- =========================
          RESUME
-    ======================================================== -->
+    ========================== -->
 
     <section id="resume" class="resume section">
 
@@ -567,7 +573,7 @@
 
         <a
           href="assets/Suraj_Kamble_Resume.pdf"
-          class="btn btn-primary mt-3"
+          class="btn btn-primary resume-download"
           target="_blank"
           rel="noopener noreferrer">
 
@@ -584,7 +590,7 @@
 
           <!-- Education -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
 
             <h3 class="resume-title">
               Professional Summary
@@ -602,15 +608,17 @@
               </p>
 
               <p>
-                Currently seeking an entry-level or junior Software Developer
-                / Java Full Stack Developer opportunity.
+                Currently seeking an entry-level or junior Software
+                Developer / Java Full Stack Developer opportunity.
               </p>
 
             </div>
 
+
             <h3 class="resume-title">
               Education
             </h3>
+
 
             <div class="resume-item">
 
@@ -632,10 +640,11 @@
               </p>
 
               <p>
-                <strong>CGPA:</strong> 8.0 / 10
+                <strong>Percentage:</strong> 72%
               </p>
 
             </div>
+
 
             <div class="resume-item">
 
@@ -657,6 +666,7 @@
               </p>
 
             </div>
+
 
             <div class="resume-item">
 
@@ -680,13 +690,15 @@
 
           </div>
 
+
           <!-- Experience -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6">
 
             <h3 class="resume-title">
               Professional Experience
             </h3>
+
 
             <div class="resume-item">
 
@@ -706,8 +718,7 @@
                 </li>
 
                 <li>
-                  Developed and updated responsive user interfaces
-                  using React.js.
+                  Developed responsive user interfaces using React.js.
                 </li>
 
                 <li>
@@ -724,6 +735,7 @@
 
             </div>
 
+
             <div class="resume-item">
 
               <h4>Java Full Stack Training</h4>
@@ -737,8 +749,7 @@
               <ul>
 
                 <li>
-                  Practiced Core Java and Object-Oriented
-                  Programming concepts.
+                  Practiced Core Java and Object-Oriented Programming.
                 </li>
 
                 <li>
@@ -754,6 +765,7 @@
               </ul>
 
             </div>
+
 
             <div class="resume-item">
 
@@ -773,13 +785,13 @@
                 </li>
 
                 <li>
-                  Gained practical experience in frontend development
-                  and web application functionality.
+                  Gained practical experience in frontend development.
                 </li>
 
               </ul>
 
             </div>
+
 
             <div class="resume-item">
 
@@ -794,8 +806,7 @@
               <ul>
 
                 <li>
-                  Practiced Core Java and Object-Oriented
-                  Programming concepts.
+                  Practiced Core Java and Object-Oriented Programming.
                 </li>
 
                 <li>
@@ -815,9 +826,10 @@
 
     </section>
 
-    <!-- =======================================================
+
+    <!-- =========================
          PROJECTS
-    ======================================================== -->
+    ========================== -->
 
     <section id="projects" class="portfolio section light-background">
 
@@ -836,9 +848,8 @@
 
         <div class="row gy-4">
 
-          <!-- Movie Recommendation -->
 
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-6">
 
             <div class="portfolio-content h-100">
 
@@ -883,9 +894,8 @@
 
           </div>
 
-          <!-- CRUD -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
 
             <div class="portfolio-content h-100">
 
@@ -929,9 +939,8 @@
 
           </div>
 
-          <!-- Portfolio -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6">
 
             <div class="portfolio-content h-100">
 
@@ -988,9 +997,10 @@
 
     </section>
 
-    <!-- =======================================================
+
+    <!-- =========================
          CERTIFICATIONS
-    ======================================================== -->
+    ========================== -->
 
     <section id="certifications" class="portfolio section">
 
@@ -1030,6 +1040,7 @@
 
           </div>
 
+
           <div class="col-lg-4 col-md-6">
 
             <div class="portfolio-content h-100">
@@ -1051,6 +1062,7 @@
             </div>
 
           </div>
+
 
           <div class="col-lg-4 col-md-6">
 
@@ -1080,9 +1092,10 @@
 
     </section>
 
-    <!-- =======================================================
+
+    <!-- =========================
          CONTACT
-    ======================================================== -->
+    ========================== -->
 
     <section id="contact" class="contact section">
 
@@ -1097,66 +1110,49 @@
 
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
-
-          <!-- Contact Information -->
 
           <div class="col-lg-5">
 
             <div class="info-wrap">
 
-              <div
-                class="info-item d-flex"
-                data-aos="fade-up"
-                data-aos-delay="200">
+              <div class="info-item">
 
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <i class="bi bi-geo-alt"></i>
 
                 <div>
-
                   <h3>Location</h3>
-
                   <p>Pune, Maharashtra, India</p>
-
                 </div>
 
               </div>
 
-              <div
-                class="info-item d-flex"
-                data-aos="fade-up"
-                data-aos-delay="300">
 
-                <i class="bi bi-telephone flex-shrink-0"></i>
+              <div class="info-item">
+
+                <i class="bi bi-telephone"></i>
 
                 <div>
-
                   <h3>Phone</h3>
-
                   <p>9637362158</p>
-
                 </div>
 
               </div>
 
-              <div
-                class="info-item d-flex"
-                data-aos="fade-up"
-                data-aos-delay="400">
 
-                <i class="bi bi-envelope flex-shrink-0"></i>
+              <div class="info-item">
+
+                <i class="bi bi-envelope"></i>
 
                 <div>
-
                   <h3>Email</h3>
-
                   <p>kamblesurajbalaji@gmail.com</p>
-
                 </div>
 
               </div>
+
 
               <div class="contact-availability">
 
@@ -1172,7 +1168,6 @@
 
           </div>
 
-          <!-- Contact Form -->
 
           <div class="col-lg-7">
 
@@ -1205,9 +1200,7 @@
 
                 <div class="col-md-6">
 
-                  <label for="name-field">
-                    Your Name
-                  </label>
+                  <label for="name-field">Your Name</label>
 
                   <input
                     type="text"
@@ -1219,53 +1212,51 @@
 
                 </div>
 
+
                 <div class="col-md-6">
 
-                  <label for="email-field">
-                    Your Email
-                  </label>
+                  <label for="email-field">Your Email</label>
 
                   <input
                     type="email"
-                    class="form-control"
                     name="email"
                     id="email-field"
+                    class="form-control"
                     placeholder="Enter your email"
                     required>
 
                 </div>
 
+
                 <div class="col-md-12">
 
-                  <label for="subject-field">
-                    Subject
-                  </label>
+                  <label for="subject-field">Subject</label>
 
                   <input
                     type="text"
-                    class="form-control"
                     name="subject"
                     id="subject-field"
+                    class="form-control"
                     placeholder="Enter subject"
                     required>
 
                 </div>
 
+
                 <div class="col-md-12">
 
-                  <label for="message-field">
-                    Message
-                  </label>
+                  <label for="message-field">Message</label>
 
                   <textarea
-                    class="form-control"
                     name="message"
-                    rows="8"
                     id="message-field"
+                    class="form-control"
+                    rows="7"
                     placeholder="Write your message..."
                     required></textarea>
 
                 </div>
+
 
                 <div class="col-md-12 text-center">
 
@@ -1292,11 +1283,12 @@
 
   </main>
 
-  <!-- =======================================================
-       FOOTER
-  ======================================================== -->
 
-  <footer id="footer" class="footer position-relative light-background">
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer id="footer" class="footer">
 
     <div class="container">
 
@@ -1308,7 +1300,9 @@
           href="https://github.com/surajkamble1234"
           target="_blank"
           rel="noopener noreferrer">
+
           Suraj Kamble
+
         </a>
 
       </div>
@@ -1317,48 +1311,38 @@
 
   </footer>
 
+
   <!-- Scroll Top -->
 
   <a
     href="#"
     id="scroll-top"
-    class="scroll-top d-flex align-items-center justify-content-center"
+    class="scroll-top"
     aria-label="Scroll to top">
 
     <i class="bi bi-arrow-up-short"></i>
 
   </a>
 
+
   <!-- Preloader -->
 
   <div id="preloader"></div>
 
-  <!-- =======================================================
-       JAVASCRIPT
-  ======================================================== -->
+
+  <!-- JavaScript -->
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <script src="assets/vendor/aos/aos.js"></script>
-
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
-
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS -->
 
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
